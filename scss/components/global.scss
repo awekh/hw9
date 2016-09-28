@@ -1,0 +1,40 @@
+$container-width: 1076px !default;
+$container-gutter:  10px !default;
+
+
+
+*,
+&:before,
+&:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul,nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+
+}
+.container {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	
+}
+
+
+.wrapper {
+	margin: 0 auto;
+	max-width: $container-width;
+	padding: 0 $container-gutter;
+}

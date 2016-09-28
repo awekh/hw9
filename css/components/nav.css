@@ -1,0 +1,12 @@
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.nav li:hover {
+  opacity: 1;
+}

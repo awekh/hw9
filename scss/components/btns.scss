@@ -1,0 +1,79 @@
+$btn-color: #fff !default;
+$btn-font-size: 13px !default;
+$btn-bg: #83a7a5 !default;
+$btn-border: 0px solid $btn-bg !default;
+$btn-border-radius: 2px !default;
+$btn-padding: 17px 25px !default;
+
+$btn-color-hover:  #fff !default;
+$btn-bg-hover: #6fb048 !default;
+$btn-border-color-hover: $btn-bg !default;
+$button-text-transform: uppercase !default;
+$btn-font-family: 'Montserrat' , sans-serif !default;
+
+@mixin btn-variants( 
+	$color, 
+	$bg, 
+	$border, 
+	$color-hover: lighten($color, 10%), 
+	$bg-hover: lighten($bg, 10%), 
+	$border-hover: lighten($border, 10%)
+	) {
+    color: $color;
+    background: $bg;
+    border-color: $border;
+    &:hover {
+        color: $color-hover;
+        background: $bg-hover;
+        border-color: $border-hover;
+    }
+}
+
+@mixin btn-size($font-size, $padding, $radius: $btn-border-radius){
+	font-size: $font-size;
+	padding: $padding;
+	border-radius: $radius;
+}
+
+.btn {
+    text-transform: $button-text-transform;
+    display: inline-block;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: normal;
+    color: $btn-color;
+    font-size: $btn-font-size;
+    font-family: $btn-font-family;
+    background: $btn-bg;
+    border: $btn-border;
+    border-radius: $btn-border-radius;
+    padding: $btn-padding;
+
+    &:hover {
+        color: $btn-color-hover;
+        background: $btn-bg-hover;
+        border-color: $btn-border-color-hover;
+    }
+}
+
+.btn-invert{
+    color: $btn-color-hover;
+    background: $btn-bg-hover;
+    padding: $btn-padding;
+    border-radius: $btn-border-radius;
+     font-size: $btn-font-size;
+    font-family: $btn-font-family;
+    text-transform: $button-text-transform;
+    display: inline-block;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    border:none;
+    
+    &:hover {
+        color: $btn-color;
+        background: $btn-bg;
+        
+    }
+}

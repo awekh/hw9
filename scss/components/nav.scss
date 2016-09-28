@@ -1,0 +1,15 @@
+.nav li{
+	float:left;
+	    margin-right: 30px;
+	a{	
+		text-transform: uppercase;
+		color:#fff;
+		opacity:0.7;
+		font-size: 13px;
+		font-family: 'Montserrat', sans-serif;
+		&:hover{
+		opacity:1;
+		text-decoration: none;
+		}
+	}
+}
